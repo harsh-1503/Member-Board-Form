@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap");
+
+* {
+  font-family: "Ubuntu";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  max-width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(
+      rgba(26, 28, 31, 1),
+      rgba(41, 52, 63, 1),
+      rgba(38, 49, 56, 1));
+  overflow-x: hidden;
+  /* background-repeat: no-repeat; */
+}
+
+.first {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #8668f2;
+  padding: 2em 0;
+  margin: auto;
+}
+
+.first h1,
+.first p {
+  font-family: "Ubuntu";
+  text-align: center;
+}
+
+.first h1 {
+  color: white;
+  font-size: 2.5em;
+  margin: 0 !important;
+}
+
+.first p,
+.first h1 {
+  padding: 0.5em;
+}
+
+.first p {
+  color: grey;
+}
+
+.first .img_div {
+  width: 20%;
+  margin: 2em 0 0 0;
+}
+
+.first .img_div .logo {
+  width: 100%;
+  height: 100%;
+}
+#WLUG{
+  font-size: 1em;
+}
+/* #resume{
+  width: 40px;
+} */
+@media (max-width: 370px) {
+  .first h1 {
+    font-size: 1.5em;
+  }
+  .first p {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 800px) {
+  .first .img_div {
+    width: 50%;
+  }
+}
+.second {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  /* margin: 30px; */
+}
+
+.card {
+  width: 528px;
+  margin: auto;
+  /* margin: 20px; */
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  /* height: 1000px; */
+}
+
+.card input {
+  margin: auto;
+  width: 100%;
+  height: 2em;
+  border-radius: 5px;
+  margin: 0.5em 0em;
+  background-color: lightgrey;
+  border:2px solid lightgrey;
+}
+
+.inputdetails {
+  font-size: 1.1em;
+  color: white;
+}
+
+.card .cardInput {
+  width: 80%;
+  margin: auto;
+  font-size: 1em;
+}
+
+.textHeading {
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  margin: 20px;
+}
+
+.submit button {
+  width: 100%;
+  background-color: rgb(142 164 164);
+  height: 35px;
+  border: 2px solid rgb(142 164 164);
+  border-radius: 6px;
+  margin: 10px 0px;
+  font-size: 19px;
+}
+.submit button:hover{
+  background-color: rgb(211, 235, 235);
+  border-color: rgb(211, 235, 235);
+}
+/* input[type=file]::file-selector-button{
+  background-color: lightgrey;
+  border: 2px solid lightgrey;
+} */
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: lightgrey;
+  padding: 5px 10px;
+  /* border-radius: 10px; */
+  color: #000;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: darkgray;
+}
+@media  (max-width:650px){
+  .card{
+    width: 85%;
+  }
+}
