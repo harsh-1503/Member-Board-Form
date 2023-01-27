@@ -18,33 +18,38 @@
       <div class="card">
         <div class="cardInput">
           <div class="textHeading">Fill your Details</div>
-          <form>
+          <form onsubmit="">
           <div class="inputdetails">
             <div class="Name">
               <label for="name">Name:</label><br />
-              <input type="text" id="name" />
+              <input type="text" id="name" required/>
             </div>
             <div class="Email">
               <label for="email">Email:</label><br />
-              <input type="email" id="email" />
+              <input type="email" id="email" required/>
             </div>
             <div class="Contact">
               <label for="contactNo">Contact No:</label><br />
-              <input type="number" id="contactNo" />
+              <input type="number" id="contactNo" required/>
             </div>
             <div class="Whatsapp">
               <label for="contactNo">Whatsapp No:</label><br />
-              <input type="number" id="WhatsappNo" />
+              <input type="number" id="WhatsappNo" required/>
             </div>
             <div class="Resume">
               <label for="resume">Upload your Resume: </label><br />
-              <input type="file" id="resume" />
+              <input type="file" id="resume" required/>
+            </div>
+            <div class="Reason">
+              <label for="reason">Reason for joining the club: </label><br />
+              <input type="text" id="reason" required/>
+            </div>
+            <div class="submit">
+              <button>Submit</button>
             </div>
           </div>
         </form>
-          <div class="submit">
-            <button>Submit</button>
-          </div>
+          
         </div>
       </div>
     </div>
