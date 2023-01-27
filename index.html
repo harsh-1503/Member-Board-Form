@@ -6,50 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Member Board | Registration</title>
     <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js"></script>
   </head>
   <body>
     <div class="first">
       <div class="img_div">
         <img class="logo" src="./WLUG_LOGO.svg" alt="logo" />
       </div>
-      <h1><span id="WLUG">Walchand Linux Users' Group</span><br /><span id="member">Member Board Registrations</span></h1>
+      <h1>
+        <span id="WLUG">Walchand Linux Users' Group</span><br /><span
+          id="member"
+          >Member Board Registrations</span
+        >
+      </h1>
     </div>
     <div class="second">
       <div class="card">
         <div class="cardInput">
           <div class="textHeading">Fill your Details</div>
-          <form onsubmit="">
-          <div class="inputdetails">
-            <div class="Name">
-              <label for="name">Name:</label><br />
-              <input type="text" id="name" required/>
+          <form onsubmit="submitForm()">
+            <div class="inputdetails">
+              <div class="Name">
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" required />
+              </div>
+              <div class="Email">
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" required />
+              </div>
+              <div class="Contact">
+                <label for="contactNo">Contact No:</label><br />
+                <input type="number" id="contactNo" required />
+              </div>
+              <div class="Whatsapp">
+                <label for="WhatsappNo">Whatsapp No:</label><br />
+                <input type="number" id="WhatsappNo" required />
+              </div>
+              <div class="Resume">
+                <label for="resume">Upload your Resume: </label><br />
+                <input
+                  type="file"
+                  id="resume"
+                  accept=".doc,.docx,.pdf"
+                  required
+                />
+              </div>
+              <div class="Reason">
+                <label for="reason">Reason for joining the club: </label><br />
+                <input type="text" id="reason" required />
+              </div>
+              <div class="submit">
+                <button id="submit">Submit</button>
+              </div>
             </div>
-            <div class="Email">
-              <label for="email">Email:</label><br />
-              <input type="email" id="email" required/>
-            </div>
-            <div class="Contact">
-              <label for="contactNo">Contact No:</label><br />
-              <input type="number" id="contactNo" required/>
-            </div>
-            <div class="Whatsapp">
-              <label for="contactNo">Whatsapp No:</label><br />
-              <input type="number" id="WhatsappNo" required/>
-            </div>
-            <div class="Resume">
-              <label for="resume">Upload your Resume: </label><br />
-              <input type="file" id="resume" required/>
-            </div>
-            <div class="Reason">
-              <label for="reason">Reason for joining the club: </label><br />
-              <input type="text" id="reason" required/>
-            </div>
-            <div class="submit">
-              <button>Submit</button>
-            </div>
-          </div>
-        </form>
-          
+          </form>
         </div>
       </div>
     </div>
