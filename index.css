@@ -68,14 +68,15 @@ body {
 /* #resume{
   width: 40px;
 } */
-@media (max-width: 370px) {
-  .first h1 {
-    font-size: 1.5em;
+@media(max-width:513px){
+  #WLUG{
+    font-size: 0.7em;
   }
-  .first p {
-    font-size: 0.8em;
+  #member{
+    font-size: 0.5em;
   }
 }
+
 @media (max-width: 800px) {
   .first .img_div {
     width: 50%;
