@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Member Board | Registration</title>
     <link href="./index.css" rel="stylesheet" />
-    <script src="./index.js"></script>
+    
   </head>
   <body>
     <div class="first">
@@ -42,14 +42,13 @@
                 <label for="WhatsappNo">Whatsapp No:</label><br />
                 <input type="number" id="WhatsappNo" required />
               </div>
+              <div class="image">
+                <label for="image">Your Photo:</label><br />
+                <input type="file" id="image" required />
+              </div>
               <div class="Resume">
                 <label for="resume">Upload your Resume: </label><br />
-                <input
-                  type="file"
-                  id="resume"
-                  accept=".doc,.docx,.pdf"
-                  required
-                />
+                <input type="file" id="resume" required />
               </div>
               <div class="Reason">
                 <label for="reason">Reason for joining the club: </label><br />
@@ -63,5 +62,38 @@
         </div>
       </div>
     </div>
+    <script>
+      function submitForm() {
+        const contactNo = document.getElementById("contactNo").value;
+        const whatsappNo = document.getElementById("WhatsappNo").value;
+
+        const image = document.getElementById("image").value;
+        const resume = document.getElementById("resume").value;
+
+        const validImageExt = ["jpg", "jpeg", "png"];
+        const validResumeExt = ["pdf", "docx", "doc"];
+
+        const imageExt = image.substring(image.lastIndexOf(".") + 1);
+        const resumeExt = resume.substring(resume.lastIndexOf(".") + 1);
+
+        if (validImageExt.includes(imageExt) == false) {
+          alert("Please upload valid file format");
+          return;
+        }
+
+        if (validResumeExt.includes(resumeExt) == false) {
+          alert("Please upload valid file format");
+          return;
+        }
+
+        if (
+          contactNo.toString().length != 10 ||
+          whatsappNo.toString().length != 10
+        ) {
+          alert("Enter valid number!!");
+          return;
+        }
+      }
+    </script>
   </body>
 </html>
